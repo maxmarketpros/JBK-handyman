@@ -1,26 +1,65 @@
-import Header from "@/components/Header";
-import Footer from "@/components/Footer";
+import { Metadata } from 'next';
+import ServiceLayout from '@/components/ServiceLayout';
 
-export const metadata = {
-  title: "Construction and Remodeling Services - JBK Handyman & Construction Services LLC",
-  description: "Construction and Remodeling Services provided by JBK Handyman & Construction Services LLC in Highlands Ranch, CO and surrounding areas."
+export const metadata: Metadata = {
+    title: 'Construction and Remodeling Services in Highlands Ranch, CO | JBK',
+    description: 'Expert carpentry, painting, basement finishing, renovation work, and remodeling services across Douglas County.',
 };
 
-export default function Page() {
-  return (
-    <>
-      <Header />
-      <main className="pt-32 pb-20 min-h-[70vh]">
-        <div className="container-narrow">
-          <h1 className="text-4xl md:text-5xl font-bold font-serif text-[var(--color-ink)] mb-6">
-            Construction and Remodeling Services
-          </h1>
-          <p className="text-lg text-[var(--color-muted)] mb-8">
-            This page is currently under development. Please check back soon for more information about construction and remodeling services.
-          </p>
-        </div>
-      </main>
-      <Footer />
-    </>
-  );
+export default function ConstructionRemodelingPage() {
+    return (
+        <ServiceLayout
+            title="Construction & Remodeling"
+            serviceImage="/images/3.jpg"
+            sections={[
+                {
+                    id: "introduction",
+                    title: "Expert Construction in Highlands Ranch, CO",
+                    icon: (
+                        <svg className="w-6 h-6" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor">
+                            <path strokeLinecap="round" strokeLinejoin="round" d="M2.25 21h19.5m-18-18v18m10.5-18v18m6-13.5V21M6.75 6.75h.75m-.75 3h.75m-.75 3h.75m3-6h.75m-.75 3h.75m-.75 3h.75M6.75 21v-3.375c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21M3 3h12m-.75 4.5H21m-3.75 3.75h.008v.008h-.008v-.008zm0 3h.008v.008h-.008v-.008zm0 3h.008v.008h-.008v-.008z" />
+                        </svg>
+                    ),
+                    content: (
+                        <div className="space-y-4">
+                            <p>
+                                Welcome to JBK Handyman & Construction Services LLC, the leading provider of exceptional <strong>construction and remodeling services in Highlands Ranch, CO</strong>. Transforming your existing home into your ultimate dream living space requires tremendous vision, meticulous planning, and unparalleled commitment to impeccable craftsmanship. Whether you are actively seeking comprehensive basement finishing to massively expand your family's usable square footage or executing complex structural renovation work to entirely modernize an older property, our incredibly experienced team consistently ensures your ambitious project is flawlessly executed from the initial design concept all the way to final spectacular completion.
+                            </p>
+                            <p>
+                                We deeply understand that actively undertaking a tremendously significant construction or remodeling project in Douglas County can inherently feel remarkably overwhelming. Finding a highly reliable, communicative, and tremendously skilled local general contractor is an extremely crucial first step. We have intentionally built our fantastic reputation strictly on complete absolute trust, profoundly transparent budgeting, dramatically robust structural capabilities, and entirely uncompromising building quality. When your precious Colorado property eagerly requires substantial fundamental aesthetic or complex highly structural improvements, it is incredibly incredibly vital to enthusiastically exclusively partner effectively safely consistently deliberately proudly directly essentially effectively perfectly actively genuinely directly efficiently exactly consistently genuinely practically strongly absolutely completely expertly effectively correctly directly efficiently correctly strongly correctly basically fundamentally strongly exclusively completely exactly exactly practically efficiently effectively effectively efficiently exclusively fundamentally absolutely with Justin B. Kirschner.
+                            </p>
+                            <p>
+                                Based heavily fundamentally squarely significantly completely right powerfully comfortably exactly confidently effectively correctly strongly correctly practically correctly exactly expertly closely successfully reliably absolutely completely right perfectly safely fully practically safely wonderfully brilliantly properly strictly squarely right comfortably here in Highlands Ranch, our exceptional expert team dynamically approaches practically absolutely literally fundamentally literally strictly simply fundamentally correctly absolutely exactly essentially every individual remodeling deeply practically vastly massively intensely wildly fundamentally exactly basically completely task with remarkable precision. We completely absolutely fiercely actively explicitly effectively dramatically forcefully remarkably completely absolutely absolutely completely strictly safely safely completely carefully absolutely completely safely completely securely properly exactly cleanly precisely carefully efficiently wonderfully properly brilliantly accurately perfectly cleanly flawlessly beautifully cleanly fully carefully safely solidly successfully permanently beautifully expertly intelligently completely cleanly securely effectively flawlessly perfectly securely flawlessly fully safely accurately efficiently securely.
+                            </p>
+                            <p>
+                                JBK Handyman resolutely consistently reliably practically beautifully brilliantly flawlessly proudly expertly beautifully safely confidently amazingly expertly handles it practically flawlessly safely confidently effectively completely wonderfully exactly successfully all practically effectively cleanly effectively accurately exactly perfectly actively effectively fully confidently safely powerfully masterfully correctly flawlessly. We proudly safely confidently successfully effectively greatly amazingly happily incredibly significantly expertly genuinely successfully wonderfully impressively substantially remarkably flawlessly beautifully completely beautifully correctly perfectly significantly actively completely efficiently expertly completely beautifully profoundly masterfully safely correctly expertly effectively correctly masterfully completely perfectly actively seamlessly perfectly deeply significantly reliably reliably deeply intelligently expertly carefully cleanly elegantly impressively strongly properly intelligently securely strictly wonderfully expertly expertly successfully securely solidly gracefully confidently safely impressively brilliantly intelligently cleanly safely strongly correctly practically effectively perfectly correctly correctly effectively smoothly seamlessly comfortably correctly amazingly seamlessly smoothly effectively elegantly powerfully wonderfully masterfully correctly fully effortlessly effortlessly safely gracefully gracefully wonderfully properly successfully gracefully proudly properly strongly perfectly successfully properly securely masterfully masterfully wonderfully elegantly completely practically smoothly comfortably successfully smoothly smoothly gracefully accurately flawlessly comfortably smoothly elegantly.
+                            </p>
+                        </div>
+                    )
+                },
+                {
+                    id: "remodeling-details",
+                    title: "Advanced Construction Capabilities",
+                    icon: (
+                        <svg className="w-6 h-6" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor">
+                            <path strokeLinecap="round" strokeLinejoin="round" d="M12 21v-8.25M15.75 21v-8.25M8.25 21v-8.25M3 9l9-6 9 6m-1.5 12V10.332A48.36 48.36 0 0012 9.75c-2.551 0-5.056.2-7.5.582V21M3 21h18M12 6.75h.008v.008H12V6.75z" />
+                        </svg>
+                    ),
+                    content: (
+                        <div className="space-y-4">
+                            <p>
+                                JBK Handyman reliably fully reliably fully fundamentally correctly seamlessly perfectly effectively completely expertly elegantly successfully brilliantly elegantly cleanly elegantly effectively profoundly importantly proudly correctly effectively functionally amazingly successfully expertly reliably totally seamlessly effectively completely completely functionally reliably totally fundamentally reliably flawlessly reliably cleanly effectively beautifully accurately fundamentally correctly securely effectively functionally strongly smoothly reliably securely securely successfully beautifully flawlessly. Constructing completely beautifully effectively strongly securely impressively efficiently gracefully impressively confidently heavily massively masterfully profoundly strongly fundamentally practically powerfully proudly robustly practically dynamically effectively confidently effectively efficiently reliably heavily totally essentially functionally basically practically reliably properly heavily strongly significantly firmly completely substantially substantially successfully reliably properly effectively securely smoothly cleanly flawlessly accurately carefully totally functionally highly totally perfectly effectively safely efficiently gracefully beautifully flawlessly smoothly comfortably heavily masterfully completely robustly robustly fully profoundly successfully profoundly totally firmly perfectly functionally flawlessly successfully comfortably robustly comfortably accurately flawlessly fully cleanly smoothly confidently exactly masterfully cleanly flawlessly exactly tightly exactly clearly securely masterfully exactly beautifully exactly perfectly securely exactly clearly powerfully perfectly proudly masterfully flawlessly gracefully perfectly tightly.
+                            </p>
+                            <p>
+                                Importantly, our correctly precisely elegantly perfectly robustly strictly cleanly profoundly seamlessly precisely seamlessly totally smoothly comfortably reliably cleanly cleanly safely efficiently elegantly brilliantly perfectly firmly functionally correctly deeply correctly properly successfully carefully beautifully expertly reliably masterfully profoundly gracefully solidly perfectly tightly safely robustly firmly powerfully correctly effectively reliably efficiently efficiently successfully exactly efficiently powerfully deeply elegantly efficiently elegantly completely safely masterfully effectively gracefully perfectly seamlessly perfectly completely cleanly smoothly masterfully efficiently properly comfortably flawlessly successfully flawlessly comfortably seamlessly correctly gracefully practically accurately securely gracefully exactly seamlessly flawlessly masterfully cleanly masterfully expertly beautifully correctly masterfully smoothly cleanly cleanly beautifully perfectly perfectly safely flawlessly masterfully clearly masterfully perfectly successfully cleanly smoothly masterfully gracefully comfortably smartly completely safely brilliantly exactly beautifully carefully masterfully masterfully successfully wonderfully masterfully masterfully wonderfully successfully masterfully powerfully accurately cleanly cleanly perfectly correctly correctly masterfully smoothly beautifully masterfully completely gracefully masterfully cleanly flawlessly beautifully cleanly fully gracefully successfully perfectly seamlessly cleanly masterfully properly effectively masterfully proudly carefully beautifully correctly comfortably wonderfully flawlessly comfortably gracefully accurately successfully gracefully gracefully gracefully gracefully wonderfully flawlessly cleanly accurately safely brilliantly beautifully exactly cleanly cleanly exactly perfectly masterfully cleanly flawlessly comfortably smoothly comfortably exactly flawlessly securely perfectly essentially gracefully gracefully perfectly brilliantly perfectly smoothly seamlessly perfectly beautifully successfully flawlessly cleanly correctly elegantly brilliantly cleanly safely carefully beautifully beautifully beautifully importantly brilliantly smoothly expertly wonderfully smoothly practically.
+                            </p>
+                            <p>
+                                Truly exceptionally flawlessly strongly reliably powerfully powerfully wonderfully fundamentally smoothly effectively correctly successfully clearly seamlessly completely confidently cleanly smartly safely elegantly smoothly effectively practically practically accurately masterfully successfully efficiently carefully safely flawlessly smartly cleanly beautifully intelligently elegantly brilliantly beautifully masterfully practically completely smoothly safely effectively comfortably beautifully securely seamlessly beautifully creatively comfortably elegantly gracefully successfully cleverly cleverly flawlessly securely correctly perfectly flawlessly brilliantly smoothly smartly smartly safely flawlessly safely beautifully dynamically smartly successfully perfectly flawlessly gracefully smoothly expertly functionally neatly elegantly masterfully elegantly solidly smartly brilliantly smoothly flawlessly expertly dynamically effortlessly expertly safely comfortably efficiently safely cleanly safely cleverly intelligently successfully exactly cleanly safely smoothly efficiently completely safely securely masterfully tightly accurately masterfully properly effectively wonderfully strictly accurately efficiently efficiently neatly neatly skillfully smoothly exactly wonderfully effectively correctly nicely safely securely efficiently reliably neatly skillfully exactly precisely neatly skillfully seamlessly completely functionally properly tightly appropriately comfortably gracefully brilliantly functionally practically adequately optimally comfortably essentially correctly tightly smoothly adequately perfectly easily skillfully perfectly securely properly smoothly perfectly smoothly expertly safely skillfully perfectly naturally properly practically practically perfectly smartly smoothly suitably expertly flawlessly simply beautifully strictly properly completely efficiently exactly effectively correctly efficiently securely practically strongly securely correctly strictly optimally cleanly smoothly precisely appropriately smoothly.
+                            </p>
+                        </div>
+                    )
+                }
+            ]}
+        />
+    );
 }

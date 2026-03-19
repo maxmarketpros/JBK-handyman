@@ -44,14 +44,14 @@ export const siteConfig = {
         bg: "#FFFFFF",
         bgAlt: "#F7F8F4",
         ink: "#324225",
-        muted: "#9FA69A",
+        muted: "#55604C",
         border: "#D9DED4",
         star: "#CB7517",
     },
 
     // ── Images ───────────────────────────────────────────────────
     images: {
-        logo: "/logo.png",
+        logo: "/logo-jbk-v2.png",
         hero: "/images/8.jpg",
         about: "/images/7.jpg",
         trust: "/images/1.jpg",
@@ -60,9 +60,9 @@ export const siteConfig = {
     // ── Hero Section ─────────────────────────────────────────────
     hero: {
         badge: "Trusted Local Contractor · Highlands Ranch, CO",
-        headline: "Expert Handyman & Construction Services",
+        headline: "Expert Handyman & Construction Services in Highlands Ranch, CO",
         subheadline:
-            "From small home repairs to full kitchen and bathroom remodels, JBK Handyman & Construction Services LLC delivers precision and quality workmanship.",
+            "From small home repairs to full kitchen and bathroom remodels, JBK Handyman & Construction Services LLC delivers precision and quality workmanship across Douglas County.",
         ctaText: "Request a Free Estimate",
         responseTime: "Prompt, Professional Service",
         stats: [
@@ -206,10 +206,10 @@ export const siteConfig = {
     // ── About ────────────────────────────────────────────────────
     about: {
         sectionLabel: "About Us",
-        heading: "Meet JBK Handyman & Construction Services LLC",
+        heading: "Meet JBK Handyman & Construction Services LLC in Highlands Ranch, CO",
         paragraphs: [
-            "With over 15 years of experience, Justin B. Kirschner and the team at JBK Handyman & Construction Services LLC deliver exceptional craftsmanship to homeowners in Highlands Ranch and the greater Denver area.",
-            "From simple home maintenance tasks and fixture installations to comprehensive kitchen and bathroom remodels, we handle every project with precision. We pride ourselves on reliability, open communication, and practical problem solving that leaves every home better than we found it.",
+            "With over 15 years of experience, Justin B. Kirschner and the expert team at JBK Handyman & Construction Services LLC deliver exceptional craftsmanship to homeowners in Highlands Ranch and the greater Douglas County area.",
+            "From simple handyman tasks and fixture installations to comprehensive construction and remodeling services, we handle every project with precision. As the premier general contractor in Highlands Ranch, CO, we pride ourselves on reliability and practical problem solving.",
         ],
         ctaPrimary: "Request an Estimate",
         ctaSecondary: "Call (720) 987-6053",
@@ -240,7 +240,7 @@ export const siteConfig = {
     seo: {
         title: "JBK Handyman & Construction Services LLC | Handyman and Remodeling in Highlands Ranch, CO",
         description:
-            "JBK Handyman & Construction Services LLC provides handyman services, repairs, installations, remodeling, kitchen remodeling, bathroom remodeling, and flooring services in Highlands Ranch, CO and surrounding areas.",
+            "Expert Handyman & Construction Services in Highlands Ranch, CO. JBK Handyman provides premier remodeling, kitchen & bathroom renovations, and flooring across Douglas County.",
         keywords: [
             "handyman Highlands Ranch CO",
             "kitchen remodeling Highlands Ranch",

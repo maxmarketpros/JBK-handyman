@@ -8,6 +8,7 @@ import ProcessSteps from "@/components/ProcessSteps";
 import Reviews from "@/components/Reviews";
 import ServiceArea from "@/components/ServiceArea";
 import About from "@/components/About";
+import SeoContent from "@/components/SeoContent";
 import EstimateForm from "@/components/EstimateForm";
 import Footer from "@/components/Footer";
 
@@ -19,6 +20,7 @@ export default function Home() {
                 <Hero />
                 <TrustRow />
                 <ServicesGrid />
+                <SeoContent />
                 <ProcessSteps />
                 <Reviews />
                 <ServiceArea />

@@ -35,9 +35,9 @@ export default function Footer() {
                             <Image
                                 src={images.logo}
                                 alt={business.name}
-                                width={160}
-                                height={42}
-                                className="h-9 w-auto mb-4"
+                                width={312}
+                                height={82}
+                                className="h-[70px] w-auto mb-4"
                             />
                         </Link>
                         <p className="text-sm leading-relaxed max-w-sm mb-4">

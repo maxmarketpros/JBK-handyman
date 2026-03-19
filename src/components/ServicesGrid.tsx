@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 import { siteConfig } from "../../site.config";
 
 const { services } = siteConfig;
@@ -35,15 +36,15 @@ export default function ServicesGrid() {
                                 <p className="text-sm text-[var(--color-muted)] leading-relaxed mb-3">
                                     {service.description}
                                 </p>
-                                <a
-                                    href="#contact"
+                                <Link
+                                    href={service.href}
                                     className="text-sm font-semibold text-[var(--color-primary)] hover:text-[var(--color-primary-dark)] transition-colors inline-flex items-center gap-1"
                                 >
-                                    Get a Quote
+                                    View Service
                                     <svg className="w-3.5 h-3.5" fill="none" viewBox="0 0 24 24" strokeWidth={2.5} stroke="currentColor">
                                         <path strokeLinecap="round" strokeLinejoin="round" d="m8.25 4.5 7.5 7.5-7.5 7.5" />
                                     </svg>
-                                </a>
+                                </Link>
                             </div>
                         </div>
                     ))}

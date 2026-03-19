@@ -27,10 +27,7 @@ export default function Reviews() {
                     </h2>
                 </div>
 
-                {/* Placeholder Note */}
-                <p className="text-center text-sm text-[var(--color-muted)] mb-10 italic">
-                    Replace these with real customer feedback in site.config.ts.
-                </p>
+
 
                 <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5 max-w-4xl mx-auto">
                     {reviews.items.map((review, i) => (
