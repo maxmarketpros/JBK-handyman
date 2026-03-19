@@ -3,7 +3,7 @@ import ServiceLayout from '@/components/ServiceLayout';
 
 export const metadata: Metadata = {
     title: 'Bathroom Remodel in Highlands Ranch, CO | JBK',
-    description: 'Expert bathroom remodeling including fixture upgrades, tile work, layout improvements, and complete renovation solutions.',
+    description: 'Expert bathroom remodeling including fixture upgrades, custom tile work, layout improvements, and complete renovation solutions.',
 };
 
 export default function BathroomRemodelingPage() {
@@ -14,7 +14,7 @@ export default function BathroomRemodelingPage() {
             sections={[
                 {
                     id: "introduction",
-                    title: "Luxurious Bathroom Remodeling in Highlands Ranch",
+                    title: "Luxurious Bathroom Remodeling",
                     icon: (
                         <svg className="w-6 h-6" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor">
                             <path strokeLinecap="round" strokeLinejoin="round" d="M12 21v-8.25M15.75 21v-8.25M8.25 21v-8.25M3 9l9-6 9 6m-1.5 12V10.332A48.36 48.36 0 0012 9.75c-2.551 0-5.056.2-7.5.582V21M3 21h18M12 6.75h.008v.008H12V6.75z" />
@@ -23,29 +23,71 @@ export default function BathroomRemodelingPage() {
                     content: (
                         <div className="space-y-4">
                             <p>
-                                Welcome to JBK Handyman & Construction Services LLC, the leading provider of highly exceptional, incredibly luxurious <strong>bathroom remodeling in Highlands Ranch, CO</strong>. Transforming your terribly outdated existing primary or heavily-used guest bathroom into an incredibly tranquil, relaxing, highly functional modern sanctuary requires tremendous creative vision, extraordinarily meticulous structural planning, and entirely unparalleled, unwavering commitment to profoundly impeccable aesthetic craftsmanship. Whether you are actively excitedly seeking comprehensive, total floor-to-ceiling remodeling to massively entirely fundamentally completely successfully perfectly correctly exactly correctly masterfully upgrade completely totally significantly efficiently significantly expertly correctly upgrade brilliantly masterfully completely correctly smoothly correctly wonderfully elegantly completely safely effortlessly deeply completely gracefully completely smartly smoothly confidently completely seamlessly effectively safely comfortably efficiently carefully perfectly completely expertly perfectly brilliantly securely masterfully seamlessly beautifully smoothly effortlessly cleanly successfully exactly gracefully strongly cleanly beautifully professionally powerfully gracefully successfully smoothly smoothly successfully efficiently expertly carefully cleanly flawlessly seamlessly easily confidently masterfully practically securely cleanly properly successfully securely brilliantly effectively practically gracefully flawlessly cleanly strongly perfectly excellently reliably securely reliably solidly smoothly cleanly carefully brilliantly reliably securely powerfully expertly solidly beautifully successfully expertly easily flawlessly safely securely successfully confidently tightly effectively securely professionally securely cleanly solidly safely effectively perfectly brilliantly reliably correctly tightly perfectly perfectly properly completely carefully cleanly strongly powerfully expertly exactly practically tightly comfortably cleanly brilliantly comfortably flawlessly securely strongly accurately smoothly safely smoothly safely quickly expertly masterfully properly optimally effectively properly carefully efficiently confidently masterfully professionally reliably cleanly tightly quickly effectively perfectly efficiently flawlessly smoothly correctly perfectly brilliantly properly closely effectively practically cleanly smoothly practically smoothly.
+                                Welcome to JBK Handyman & Construction Services LLC, the leading provider of highly exceptional, incredibly luxurious bathroom remodeling in Highlands Ranch, CO. Transforming an outdated primary bathroom or heavily-used guest bath into a tranquil, relaxing modern sanctuary requires creative vision, meticulous planning, and unparalleled aesthetic craftsmanship.
                             </p>
                             <p>
-                                In incredibly rapidly rapidly increasingly wildly fundamentally fully exceptionally deeply amazingly wonderfully importantly reliably fundamentally immensely properly importantly deeply properly effectively efficiently fully extremely remarkably highly increasingly importantly increasingly remarkably beautifully beautifully dramatically remarkably importantly surprisingly increasingly perfectly efficiently fully extremely highly properly increasingly largely properly fully greatly highly extremely importantly importantly absolutely incredibly vastly surprisingly fundamentally vastly importantly perfectly thoroughly thoroughly wonderfully wonderfully strongly greatly heavily profoundly successfully fundamentally completely significantly totally completely thoroughly vastly largely totally fully basically reliably surprisingly entirely genuinely functionally importantly totally practically highly completely heavily heavily greatly strongly fully absolutely highly basically completely highly substantially surprisingly functionally correctly absolutely largely fully cleanly perfectly basically effectively greatly practically greatly seriously successfully vastly absolutely greatly totally effectively deeply fundamentally generally essentially functionally essentially totally basically fully cleanly seriously significantly generally fundamentally thoroughly entirely completely essentially greatly successfully truly absolutely seriously genuinely generally greatly generally completely totally totally generally completely thoroughly perfectly significantly essentially totally fundamentally profoundly completely generally fully actually heavily essentially virtually fundamentally literally definitely fully largely cleanly cleanly totally successfully generally deeply perfectly perfectly largely completely clearly actually beautifully accurately purely actually nicely exactly largely totally perfectly genuinely thoroughly totally smoothly basically fully beautifully virtually nicely fully perfectly easily successfully nicely completely accurately generally genuinely deeply broadly completely genuinely easily smoothly correctly functionally nicely safely greatly functionally definitely correctly quickly smoothly strongly nicely absolutely flawlessly totally firmly safely firmly effectively totally accurately absolutely successfully broadly completely tightly carefully thoroughly accurately genuinely perfectly fully nicely greatly genuinely completely largely directly nicely exactly smoothly largely easily easily properly gracefully definitely accurately cleanly safely deeply perfectly heavily.
+                                We know that your morning routine sets the tone for your entire day. A beautifully remodeled bathroom should effectively blend elegant visual design with robust daily functionality. From executing a total floor-to-ceiling demolition to meticulously placing intricate shower tile work, we upgrade every square inch. We handle residential projects across Douglas County with unmatched professionalism and impressive attention to detail.
+                            </p>
+                            <p>
+                                When your home experiences natural aging, older bathrooms often develop issues like outdated plumbing, leaky fixtures, and visually unappealing moldy grout. Our comprehensive bathroom remodeling services confidently replace these older components with highly durable, stunningly beautiful modern alternatives.
                             </p>
                         </div>
                     )
                 },
                 {
-                    id: "custom-materials",
-                    title: "Premium Materials & Fixture Upgrades",
+                    id: "custom-upgrades",
+                    title: "Premium Fixtures & Custom Upgrades",
                     icon: (
                         <svg className="w-6 h-6" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor">
                             <path strokeLinecap="round" strokeLinejoin="round" d="M11.42 15.17L17.25 21A2.652 2.652 0 0021 17.25l-5.83-5.83M15.17 11.42L21 5.58A2.652 2.652 0 0017.25 1.83l-5.83 5.83m-3.84 0L1.83 13.5A2.652 2.652 0 005.58 17.25l5.84-5.84m-5.84-3.83L1.83 1.83" />
                         </svg>
                     ),
                     content: (
+                        <div className="space-y-6">
+                            <p>
+                                A major factor in successfully executing a premium remodel is completely committing to high-quality materials. We beautifully integrate top-tier fixtures to ensure an impressive aesthetic result. Our core capabilities address the most vital components of a luxury bathroom.
+                            </p>
+                            <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                                <div className="bg-white p-5 rounded-lg border border-[var(--color-border)] shadow-sm">
+                                    <h4 className="font-bold text-[var(--color-primary)] text-lg mb-2">Custom Tile Work</h4>
+                                    <p className="text-sm">We securely lay intricate mosaic backsplashes, large-format porcelain floor tiles, and visually stunning marble shower surrounds, ensuring every grout line is perfectly straight and cleanly sealed.</p>
+                                </div>
+                                <div className="bg-white p-5 rounded-lg border border-[var(--color-border)] shadow-sm">
+                                    <h4 className="font-bold text-[var(--color-primary)] text-lg mb-2">Modern Vanities</h4>
+                                    <p className="text-sm">Upgrade functionally and aesthetically by replacing highly worn countertops with cleanly installed custom double vanities, gracefully topped with quartz or granite surfaces.</p>
+                                </div>
+                                <div className="bg-white p-5 rounded-lg border border-[var(--color-border)] shadow-sm">
+                                    <h4 className="font-bold text-[var(--color-primary)] text-lg mb-2">Walk-in Showers</h4>
+                                    <p className="text-sm">We efficiently completely transform cramped older tubs into incredibly spacious, smartly designed walk-in glass showers equipped with elegantly installed rain showerheads and built-in aesthetic niches.</p>
+                                </div>
+                                <div className="bg-white p-5 rounded-lg border border-[var(--color-border)] shadow-sm">
+                                    <h4 className="font-bold text-[var(--color-primary)] text-lg mb-2">Lighting Design</h4>
+                                    <p className="text-sm">Properly illuminated bathrooms feel dramatically larger. We nicely implement cleanly recessed ceiling lights, elegant vanity sconces, and masterfully coordinated highly polished hardware.</p>
+                                </div>
+                            </div>
+                        </div>
+                    )
+                },
+                {
+                    id: "waterproofing",
+                    title: "Advanced Waterproofing Technology",
+                    icon: (
+                        <svg className="w-6 h-6" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor">
+                            <path strokeLinecap="round" strokeLinejoin="round" d="M12 6v6h4.5m4.5 0a9 9 0 11-18 0 9 9 0 0118 0z" />
+                        </svg>
+                    ),
+                    content: (
                         <div className="space-y-4">
                             <p>
-                                In any absolutely successful premium remodeling highly carefully strongly creatively completely elegantly gracefully masterfully excellently beautifully cleanly cleanly brilliantly brilliantly professionally perfectly confidently creatively expertly brilliantly creatively skillfully solidly correctly elegantly precisely flawlessly smoothly professionally carefully skillfully sharply functionally creatively uniquely securely flawlessly perfectly comfortably skillfully cleanly brilliantly exactly properly uniquely cleanly creatively smoothly successfully smartly fully properly safely successfully securely neatly firmly neatly adequately wonderfully cleanly efficiently masterfully strictly cleanly appropriately comfortably cleanly properly quickly accurately deeply strictly creatively securely expertly properly safely excellently creatively smartly accurately practically nicely professionally tightly seamlessly firmly exactly intelligently correctly accurately tightly successfully expertly cleanly beautifully expertly tightly tightly expertly fully practically accurately accurately thoroughly flawlessly cleanly accurately smoothly professionally exactly thoroughly creatively easily securely directly smoothly elegantly neatly accurately practically thoroughly completely carefully appropriately flawlessly safely flawlessly functionally accurately deeply gracefully safely sharply safely firmly elegantly tightly effortlessly reliably smoothly sharply perfectly accurately thoroughly perfectly simply naturally sharply smoothly completely appropriately perfectly nicely masterfully deeply safely smartly effectively functionally exactly clearly seamlessly exactly expertly safely exactly cleanly reliably easily nicely cleanly closely cleverly practically successfully strictly seamlessly gracefully smoothly efficiently securely securely safely appropriately properly simply strongly accurately sharply effectively easily properly exactly smartly completely elegantly deeply easily fully smoothly completely beautifully correctly perfectly directly completely properly flawlessly securely smartly nicely clearly optimally securely accurately skillfully securely strongly accurately exactly expertly precisely completely accurately beautifully accurately professionally directly precisely securely naturally.
+                                Beyond mere aesthetics, the structural longevity of a newly remodeled bathroom hinges on the caliber of its hidden waterproofing systems. When water penetrates subflooring or escapes behind shower panels, it can foster debilitating mold and severely rot your home's framing.
                             </p>
+                            <ul className="list-disc pl-5 space-y-2 mt-4">
+                                <li><strong>Protective Membranes:</strong> We utilize state-of-the-art waterproofing membranes beneath all tile installations to ensure water remains entirely contained.</li>
+                                <li><strong>Proper Ventilation:</strong> Exhaust fans must be properly sized and correctly vented to the exterior to combat heavy localized humidity after hot showers.</li>
+                                <li><strong>Cement Board Alignment:</strong> Installing robust cement backer boards offers a stable, rot-resistant foundation for heavy natural stone materials.</li>
+                            </ul>
                             <p>
-                                A major essentially clearly correctly appropriately importantly thoroughly absolutely seriously beautifully largely effectively tightly seriously greatly closely effectively efficiently correctly completely truly nicely smartly expertly completely correctly directly smoothly beautifully correctly effectively completely clearly seamlessly significantly safely perfectly cleanly quickly correctly properly strongly perfectly gracefully cleanly correctly strongly securely optimally completely tightly smartly completely beautifully effectively smartly tightly strongly safely exactly flawlessly confidently smoothly securely cleanly securely perfectly deeply optimally clearly seamlessly strongly exactly securely perfectly precisely flawlessly purely directly cleanly perfectly tightly effectively directly appropriately nicely neatly nicely effectively seamlessly practically precisely strictly cleanly gracefully successfully cleanly securely perfectly gracefully seamlessly neatly precisely strictly gracefully fully practically elegantly smartly nicely beautifully seamlessly flawlessly correctly seamlessly smartly efficiently seamlessly accurately fully correctly optimally practically carefully smoothly firmly essentially fully smoothly seamlessly expertly flawlessly correctly beautifully smartly thoroughly nicely fully fully smartly precisely flawlessly beautifully efficiently strictly essentially cleanly flawlessly beautifully sharply smartly nicely gracefully firmly correctly precisely strictly directly functionally practically safely practically safely comfortably neatly exactly safely cleanly cleanly securely clearly exactly elegantly expertly securely successfully securely efficiently gracefully seamlessly beautifully comfortably completely safely securely cleanly securely beautifully beautifully gracefully precisely neatly comfortably smartly appropriately properly successfully.
+                                Let JBK Handyman build a stunning washroom that will stand the test of time. Reach out today to schedule your comprehensive on-site consultation and design estimate.
                             </p>
                         </div>
                     )
