@@ -1,9 +1,25 @@
 import { Metadata } from 'next';
 import ServiceLayout from '@/components/ServiceLayout';
 
+const slug = '/construction-remodeling-services-jbk-handyman-construction';
+const base = 'https://jbkhandymanco.com';
+const pageTitle = 'Construction & Remodeling in Highlands Ranch, CO | JBK';
+const pageDesc = 'Expert carpentry, painting, basement finishing, renovation work, and remodeling services across Douglas County, CO. Call JBK today.';
+
 export const metadata: Metadata = {
-    title: 'Construction and Remodeling Services in Highlands Ranch, CO | JBK',
-    description: 'Expert carpentry, painting, basement finishing, renovation work, and remodeling services across Douglas County.',
+    title: pageTitle,
+    description: pageDesc,
+    alternates: { canonical: `${base}${slug}` },
+    openGraph: {
+        title: pageTitle,
+        description: pageDesc,
+        url: `${base}${slug}`,
+        siteName: 'JBK Handyman & Construction Services LLC',
+        type: 'website',
+        locale: 'en_US',
+        images: [{ url: `${base}/images/3.jpg`, width: 1200, height: 630, alt: 'Construction and Remodeling Services in Highlands Ranch, CO' }],
+    },
+    twitter: { card: 'summary_large_image', title: pageTitle, description: pageDesc, images: [`${base}/images/3.jpg`] },
 };
 
 export default function ConstructionRemodelingPage() {

@@ -64,16 +64,18 @@ export const metadata: Metadata = {
 
 const jsonLd = {
     "@context": "https://schema.org",
-    "@type": schema.businessType,
-    "@id": `${business.siteUrl}/#business`,
+    "@type": ["GeneralContractor", "HomeAndConstructionBusiness"],
+    "@id": `${business.siteUrl}#business`,
     name: business.name,
     telephone: business.phone,
     email: business.email,
     url: business.siteUrl,
     image: `${business.siteUrl}${seo.ogImage}`,
+    logo: `${business.siteUrl}logo-jbk-v2.png`,
     priceRange: schema.priceRange,
     address: {
         "@type": "PostalAddress",
+        streetAddress: "",
         addressLocality: location.city,
         addressRegion: location.state,
         postalCode: location.zip,
@@ -84,17 +86,32 @@ const jsonLd = {
         latitude: location.geo.lat,
         longitude: location.geo.lng,
     },
-    areaServed: location.areasServed.map((city) => ({
-        "@type": "City",
-        name: city,
-    })),
+    areaServed: [
+        { "@type": "City", name: location.city },
+        ...location.areasServed.map((city) => ({
+            "@type": "City",
+            name: city,
+        })),
+    ],
     founder: {
         "@type": "Person",
         name: business.ownerName,
-        jobTitle: "Owner",
+        jobTitle: "Owner & Founder",
     },
     description: business.description,
-    knowsAbout: schema.knowsAbout,
+    openingHours: "Mo-Fr 08:00-18:00",
+    hasOfferCatalog: {
+        "@type": "OfferCatalog",
+        name: "Handyman & Construction Services",
+        itemListElement: schema.knowsAbout.map((service, i) => ({
+            "@type": "Offer",
+            itemOffered: {
+                "@type": "Service",
+                name: service,
+            },
+            position: i + 1,
+        })),
+    },
 };
 
 export default function RootLayout({

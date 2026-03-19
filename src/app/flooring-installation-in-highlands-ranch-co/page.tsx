@@ -1,9 +1,25 @@
 import { Metadata } from 'next';
 import ServiceLayout from '@/components/ServiceLayout';
 
+const slug = '/flooring-installation-in-highlands-ranch-co';
+const base = 'https://jbkhandymanco.com';
+const pageTitle = 'Flooring Installation in Highlands Ranch, CO | JBK';
+const pageDesc = 'Expert residential installation and replacement of solid hardwood, laminate, custom tile, and luxury vinyl flooring in Douglas County, CO.';
+
 export const metadata: Metadata = {
-    title: 'Flooring Installation in Highlands Ranch, CO | JBK',
-    description: 'Expert residential installation and replacement of solid hardwood, laminate, custom tile, and luxury vinyl flooring in Douglas County.',
+    title: pageTitle,
+    description: pageDesc,
+    alternates: { canonical: `${base}${slug}` },
+    openGraph: {
+        title: pageTitle,
+        description: pageDesc,
+        url: `${base}${slug}`,
+        siteName: 'JBK Handyman & Construction Services LLC',
+        type: 'website',
+        locale: 'en_US',
+        images: [{ url: `${base}/images/6.jpg`, width: 1200, height: 630, alt: 'Flooring Installation in Highlands Ranch, CO' }],
+    },
+    twitter: { card: 'summary_large_image', title: pageTitle, description: pageDesc, images: [`${base}/images/6.jpg`] },
 };
 
 export default function FlooringInstallationPage() {

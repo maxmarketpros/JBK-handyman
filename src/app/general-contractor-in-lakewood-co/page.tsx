@@ -1,9 +1,25 @@
 import { Metadata } from 'next';
 import LocationLayout from '@/components/LocationLayout';
 
+const slug = '/general-contractor-in-lakewood-co';
+const base = 'https://jbkhandymanco.com';
+const pageTitle = 'General Contractor in Lakewood, CO | JBK';
+const pageDesc = 'Highly rated general contractor in Lakewood, CO. Trusted for exceptional kitchen remodeling, bathroom buildouts, custom carpentry, and property repairs.';
+
 export const metadata: Metadata = {
-    title: 'General Contractor in Lakewood, CO | JBK',
-    description: 'Highly rated general contractor located in Lakewood, CO. Trusted for exceptional kitchen remodeling, bathroom buildouts, custom carpentry, and property repairs.',
+    title: pageTitle,
+    description: pageDesc,
+    alternates: { canonical: `${base}${slug}` },
+    openGraph: {
+        title: pageTitle,
+        description: pageDesc,
+        url: `${base}${slug}`,
+        siteName: 'JBK Handyman & Construction Services LLC',
+        type: 'website',
+        locale: 'en_US',
+        images: [{ url: `${base}/images/2.jpg`, width: 1200, height: 630, alt: 'General Contractor in Lakewood, CO' }],
+    },
+    twitter: { card: 'summary_large_image', title: pageTitle, description: pageDesc, images: [`${base}/images/2.jpg`] },
 };
 
 export default function LakewoodAreaPage() {

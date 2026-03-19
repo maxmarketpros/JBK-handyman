@@ -1,9 +1,25 @@
 import { Metadata } from 'next';
 import LocationLayout from '@/components/LocationLayout';
 
+const slug = '/general-contractor-in-denver-co';
+const base = 'https://jbkhandymanco.com';
+const pageTitle = 'General Contractor in Denver, CO | JBK';
+const pageDesc = 'Premier home remodeling and general contracting in Denver, CO. Kitchen upgrades, master bathrooms, basement finishing, and historical rectifications.';
+
 export const metadata: Metadata = {
-    title: 'General Contractor in Denver, CO | JBK',
-    description: 'Premier home remodeling and general contracting located throughout Denver, CO. Kitchen upgrades, master bathrooms, basement finishing, and historical rectifications.',
+    title: pageTitle,
+    description: pageDesc,
+    alternates: { canonical: `${base}${slug}` },
+    openGraph: {
+        title: pageTitle,
+        description: pageDesc,
+        url: `${base}${slug}`,
+        siteName: 'JBK Handyman & Construction Services LLC',
+        type: 'website',
+        locale: 'en_US',
+        images: [{ url: `${base}/images/9.jpg`, width: 1200, height: 630, alt: 'General Contractor in Denver, CO' }],
+    },
+    twitter: { card: 'summary_large_image', title: pageTitle, description: pageDesc, images: [`${base}/images/9.jpg`] },
 };
 
 export default function DenverAreaPage() {

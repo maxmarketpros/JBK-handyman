@@ -1,9 +1,25 @@
 import { Metadata } from 'next';
 import LocationLayout from '@/components/LocationLayout';
 
+const slug = '/general-contractor-in-jefferson-county-co';
+const base = 'https://jbkhandymanco.com';
+const pageTitle = 'General Contractor in Jefferson County, CO | JBK';
+const pageDesc = 'Expert general contracting and remodeling services across Jefferson County, CO. Premium bathroom renovations, drywall repairs, and flooring installations.';
+
 export const metadata: Metadata = {
-    title: 'General Contractor in Jefferson County, CO | JBK',
-    description: 'Expert general contracting and remodeling services across Jefferson County, CO. Premium bathroom renovations, drywall repairs, and flooring installations.',
+    title: pageTitle,
+    description: pageDesc,
+    alternates: { canonical: `${base}${slug}` },
+    openGraph: {
+        title: pageTitle,
+        description: pageDesc,
+        url: `${base}${slug}`,
+        siteName: 'JBK Handyman & Construction Services LLC',
+        type: 'website',
+        locale: 'en_US',
+        images: [{ url: `${base}/images/5.jpg`, width: 1200, height: 630, alt: 'General Contractor in Jefferson County, CO' }],
+    },
+    twitter: { card: 'summary_large_image', title: pageTitle, description: pageDesc, images: [`${base}/images/5.jpg`] },
 };
 
 export default function JeffersonCountyAreaPage() {

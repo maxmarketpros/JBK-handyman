@@ -1,9 +1,25 @@
 import { Metadata } from 'next';
 import LocationLayout from '@/components/LocationLayout';
 
+const slug = '/general-contractor-in-castle-rock-co';
+const base = 'https://jbkhandymanco.com';
+const pageTitle = 'General Contractor in Castle Rock, CO | JBK';
+const pageDesc = 'Top-rated general contractor serving Castle Rock, CO. We specialize in basement finishing, remodeling, repairs, and reliable home improvements.';
+
 export const metadata: Metadata = {
-    title: 'General Contractor in Castle Rock, CO | JBK',
-    description: 'Top-rated general contractor serving Castle Rock, CO. We specialize in basement finishing, remodeling, repairs, and reliable home improvements.',
+    title: pageTitle,
+    description: pageDesc,
+    alternates: { canonical: `${base}${slug}` },
+    openGraph: {
+        title: pageTitle,
+        description: pageDesc,
+        url: `${base}${slug}`,
+        siteName: 'JBK Handyman & Construction Services LLC',
+        type: 'website',
+        locale: 'en_US',
+        images: [{ url: `${base}/images/7.jpg`, width: 1200, height: 630, alt: 'General Contractor in Castle Rock, CO' }],
+    },
+    twitter: { card: 'summary_large_image', title: pageTitle, description: pageDesc, images: [`${base}/images/7.jpg`] },
 };
 
 export default function CastleRockAreaPage() {

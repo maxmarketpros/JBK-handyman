@@ -218,7 +218,7 @@ export const siteConfig = {
     // ── Service Area ─────────────────────────────────────────────
     serviceArea: {
         sectionLabel: "Where We Work",
-        heading: "Proudly serving Highlands Ranch and nearby communities throughout the greater Denver area",
+        heading: "Serving Highlands Ranch & the Greater Denver Area",
         mapTitle: "Serving Highlands Ranch, CO",
         mapSubtitle: "and surrounding areas including Castle Rock, Jefferson County, and Douglas County",
     },
@@ -238,9 +238,9 @@ export const siteConfig = {
 
     // ── SEO ──────────────────────────────────────────────────────
     seo: {
-        title: "JBK Handyman & Construction Services LLC | Handyman and Remodeling in Highlands Ranch, CO",
+        title: "Handyman & Remodeling in Highlands Ranch | JBK Handyman",
         description:
-            "Expert Handyman & Construction Services in Highlands Ranch, CO. JBK Handyman provides premier remodeling, kitchen & bathroom renovations, and flooring across Douglas County.",
+            "Expert handyman & construction services in Highlands Ranch, CO. JBK Handyman provides premier remodeling, renovations, and flooring across Douglas County.",
         keywords: [
             "handyman Highlands Ranch CO",
             "kitchen remodeling Highlands Ranch",

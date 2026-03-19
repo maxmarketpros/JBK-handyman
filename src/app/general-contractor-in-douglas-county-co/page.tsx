@@ -1,9 +1,25 @@
 import { Metadata } from 'next';
 import LocationLayout from '@/components/LocationLayout';
 
+const slug = '/general-contractor-in-douglas-county-co';
+const base = 'https://jbkhandymanco.com';
+const pageTitle = 'General Contractor in Douglas County, CO | JBK';
+const pageDesc = 'Expert home remodeling, basement finishing, and general contracting services serving all of Douglas County, CO. Built on absolute trust and quality.';
+
 export const metadata: Metadata = {
-    title: 'General Contractor in Douglas County, CO | JBK',
-    description: 'Expert home remodeling, basement finishing, and general contracting services serving all of Douglas County, CO. Built on absolute trust and quality.',
+    title: pageTitle,
+    description: pageDesc,
+    alternates: { canonical: `${base}${slug}` },
+    openGraph: {
+        title: pageTitle,
+        description: pageDesc,
+        url: `${base}${slug}`,
+        siteName: 'JBK Handyman & Construction Services LLC',
+        type: 'website',
+        locale: 'en_US',
+        images: [{ url: `${base}/images/3.jpg`, width: 1200, height: 630, alt: 'General Contractor in Douglas County, CO' }],
+    },
+    twitter: { card: 'summary_large_image', title: pageTitle, description: pageDesc, images: [`${base}/images/3.jpg`] },
 };
 
 export default function DouglasCountyAreaPage() {

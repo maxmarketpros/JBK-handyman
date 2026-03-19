@@ -1,9 +1,25 @@
 import { Metadata } from 'next';
 import ServiceLayout from '@/components/ServiceLayout';
 
+const slug = '/handyman-services-highlands-ranch-co';
+const base = 'https://jbkhandymanco.com';
+const pageTitle = 'Handyman Services in Highlands Ranch, CO | JBK';
+const pageDesc = 'Expert general repairs, home maintenance, fixture work, and TV mounting to keep your Highlands Ranch home fully functional and well-maintained.';
+
 export const metadata: Metadata = {
-    title: 'Handyman Services in Highlands Ranch, CO | JBK',
-    description: 'Expert general repairs, home maintenance, fixture work, and TV mounting to keep your Highlands Ranch home fully functional and well-maintained.',
+    title: pageTitle,
+    description: pageDesc,
+    alternates: { canonical: `${base}${slug}` },
+    openGraph: {
+        title: pageTitle,
+        description: pageDesc,
+        url: `${base}${slug}`,
+        siteName: 'JBK Handyman & Construction Services LLC',
+        type: 'website',
+        locale: 'en_US',
+        images: [{ url: `${base}/images/9.jpg`, width: 1200, height: 630, alt: 'Handyman Services in Highlands Ranch, CO' }],
+    },
+    twitter: { card: 'summary_large_image', title: pageTitle, description: pageDesc, images: [`${base}/images/9.jpg`] },
 };
 
 export default function HandymanServicesPage() {

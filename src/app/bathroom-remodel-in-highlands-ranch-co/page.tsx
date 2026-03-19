@@ -1,9 +1,25 @@
 import { Metadata } from 'next';
 import ServiceLayout from '@/components/ServiceLayout';
 
+const slug = '/bathroom-remodel-in-highlands-ranch-co';
+const base = 'https://jbkhandymanco.com';
+const pageTitle = 'Bathroom Remodel in Highlands Ranch, CO | JBK';
+const pageDesc = 'Expert bathroom remodeling including fixture upgrades, custom tile work, layout improvements, and complete renovation solutions in Highlands Ranch, CO.';
+
 export const metadata: Metadata = {
-    title: 'Bathroom Remodel in Highlands Ranch, CO | JBK',
-    description: 'Expert bathroom remodeling including fixture upgrades, custom tile work, layout improvements, and complete renovation solutions.',
+    title: pageTitle,
+    description: pageDesc,
+    alternates: { canonical: `${base}${slug}` },
+    openGraph: {
+        title: pageTitle,
+        description: pageDesc,
+        url: `${base}${slug}`,
+        siteName: 'JBK Handyman & Construction Services LLC',
+        type: 'website',
+        locale: 'en_US',
+        images: [{ url: `${base}/images/4.jpg`, width: 1200, height: 630, alt: 'Bathroom Remodeling in Highlands Ranch, CO' }],
+    },
+    twitter: { card: 'summary_large_image', title: pageTitle, description: pageDesc, images: [`${base}/images/4.jpg`] },
 };
 
 export default function BathroomRemodelingPage() {
