@@ -1,15 +1,25 @@
 import Image from "next/image";
+import Link from "next/link";
 import { siteConfig } from "../../site.config";
 
 const { business, location, images } = siteConfig;
 
-const quickLinks = [
-    { label: "Services", href: "#services" },
-    { label: "Our Process", href: "#process" },
-    { label: "Reviews", href: "#reviews" },
-    { label: "Service Area", href: "#service-area" },
-    { label: "About", href: "#about" },
-    { label: "Contact", href: "#contact" },
+const serviceLinks = [
+    { label: "Handyman Services", href: "/handyman-services-highlands-ranch-co" },
+    { label: "Repair & Installation", href: "/repair-installation-services-highlands-ranch-co" },
+    { label: "Construction & Remodeling", href: "/construction-remodeling-services-jbk-handyman-construction" },
+    { label: "Bathroom Remodeling", href: "/bathroom-remodel-in-highlands-ranch-co" },
+    { label: "Kitchen Remodeling", href: "/kitchen-remodel-in-highlands-ranch-co" },
+    { label: "Flooring Installation", href: "/flooring-installation-in-highlands-ranch-co" },
+];
+
+const locationLinks = [
+    { label: "Castle Rock", href: "/general-contractor-in-castle-rock-co" },
+    { label: "Jefferson County", href: "/general-contractor-in-jefferson-county-co" },
+    { label: "Douglas County", href: "/general-contractor-in-douglas-county-co" },
+    { label: "Denver", href: "/general-contractor-in-denver-co" },
+    { label: "Littleton", href: "/general-contractor-in-littleton-co" },
+    { label: "Lakewood", href: "/general-contractor-in-lakewood-co" },
 ];
 
 export default function Footer() {
@@ -20,14 +30,16 @@ export default function Footer() {
             <div className="container-wide py-14">
                 <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10">
                     {/* Brand */}
-                    <div className="lg:col-span-2">
-                        <Image
-                            src={images.logo}
-                            alt={business.name}
-                            width={160}
-                            height={42}
-                            className="h-9 w-auto mb-4 brightness-0 invert"
-                        />
+                    <div className="lg:col-span-1">
+                        <Link href="/">
+                            <Image
+                                src={images.logo}
+                                alt={business.name}
+                                width={160}
+                                height={42}
+                                className="h-9 w-auto mb-4"
+                            />
+                        </Link>
                         <p className="text-sm leading-relaxed max-w-sm mb-4">
                             {business.description}
                         </p>
@@ -36,18 +48,35 @@ export default function Footer() {
                         </p>
                     </div>
 
-                    {/* Quick Links */}
+                    {/* Services Links */}
                     <div>
-                        <h4 className="text-white font-semibold text-sm mb-4 uppercase tracking-wider">Quick Links</h4>
+                        <h4 className="text-white font-semibold text-sm mb-4 uppercase tracking-wider">Services</h4>
                         <ul className="space-y-2">
-                            {quickLinks.map((link) => (
+                            {serviceLinks.map((link) => (
                                 <li key={link.href}>
-                                    <a
+                                    <Link
                                         href={link.href}
                                         className="text-sm hover:text-white transition-colors"
                                     >
                                         {link.label}
-                                    </a>
+                                    </Link>
+                                </li>
+                            ))}
+                        </ul>
+                    </div>
+
+                    {/* Service Areas */}
+                    <div>
+                        <h4 className="text-white font-semibold text-sm mb-4 uppercase tracking-wider">Areas Served</h4>
+                        <ul className="space-y-2">
+                            {locationLinks.map((link) => (
+                                <li key={link.href}>
+                                    <Link
+                                        href={link.href}
+                                        className="text-sm hover:text-white transition-colors"
+                                    >
+                                        {link.label}
+                                    </Link>
                                 </li>
                             ))}
                         </ul>

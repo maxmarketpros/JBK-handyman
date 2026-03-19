@@ -21,12 +21,12 @@ export default function EstimateForm() {
                 <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 max-w-5xl mx-auto">
                     {/* Form Embed */}
                     <div className="lg:col-span-2">
-                        <div className="card overflow-hidden form-iframe-wrapper">
+                        <div className="card overflow-hidden form-iframe-wrapper relative">
                             <iframe
-                                src={form.embedUrl}
-                                style={{ width: "100%", height: "100%", border: "none", borderRadius: "2px" }}
-                                id={`inline-${form.formId}`}
-                                data-layout='{"id":"INLINE"}'
+                                src="https://api.leadconnectorhq.com/widget/form/JHshIb4QVpaGnye1OJpT"
+                                style={{ width: "100%", height: "100%", border: "none", borderRadius: "3px" }}
+                                id="inline-JHshIb4QVpaGnye1OJpT"
+                                data-layout="{'id':'INLINE'}"
                                 data-trigger-type="alwaysShow"
                                 data-trigger-value=""
                                 data-activation-type="alwaysActivated"
@@ -34,10 +34,10 @@ export default function EstimateForm() {
                                 data-deactivation-type="neverDeactivate"
                                 data-deactivation-value=""
                                 data-form-name="WebSite Form Template"
-                                data-height="695"
-                                data-layout-iframe-id={`inline-${form.formId}`}
-                                data-form-id={form.formId}
-                                title={`${business.name} — ${form.formTitle}`}
+                                data-height="692"
+                                data-layout-iframe-id="inline-JHshIb4QVpaGnye1OJpT"
+                                data-form-id="JHshIb4QVpaGnye1OJpT"
+                                title="WebSite Form Template"
                             />
                         </div>
                     </div>

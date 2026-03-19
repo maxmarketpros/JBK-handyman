@@ -1,143 +1,144 @@
 // ╔══════════════════════════════════════════════════════════════════╗
-// ║  SITE CONFIG — Edit this file to customize for a new business  ║
+// ║  SITE CONFIG — Customized for JBK Handyman & Construction        ║
 // ╚══════════════════════════════════════════════════════════════════╝
 
 export const siteConfig = {
     // ── Business Info ──────────────────────────────────────────────
     business: {
-        name: "Your Business Name",
-        tagline: "Your Business Tagline",
+        name: "JBK Handyman & Construction Services LLC",
+        tagline: "Premium Handyman & Remodeling in Highlands Ranch, CO",
         description:
-            "A short description of your business for SEO and the footer.",
-        ownerName: "Owner Name",
-        phone: "(555) 123-4567",
-        phoneRaw: "5551234567", // digits only, used for tel: links
-        email: "hello@yourbusiness.com",
-        siteUrl: "https://yourbusiness.com",
+            "JBK Handyman & Construction Services LLC provides handyman, repair, installation, construction, and remodeling services in Highlands Ranch and surrounding Colorado areas.",
+        ownerName: "Justin B. Kirschner",
+        phone: "(720) 987-6053",
+        phoneRaw: "7209876053",
+        email: "jbkhandyman617@gmail.com",
+        siteUrl: "https://jbkhandymanco.com/",
     },
 
     // ── Location ─────────────────────────────────────────────────
     location: {
-        city: "Your City",
-        state: "TX",
-        zip: "00000",
-        county: "Your County",
-        geo: { lat: 0, lng: 0 },
+        city: "Highlands Ranch",
+        state: "CO",
+        zip: "80126",
+        county: "Douglas County",
+        geo: { lat: 39.5544, lng: -104.9696 },
         areasServed: [
-            "Nearby City 1",
-            "Nearby City 2",
-            "Nearby City 3",
-            "Nearby City 4",
-            "Nearby City 5",
-            "Nearby City 6",
+            "Castle Rock",
+            "Jefferson County",
+            "Douglas County",
+            "Denver",
+            "Littleton",
+            "Lakewood",
         ],
     },
 
     // ── Branding / Colors ────────────────────────────────────────
-    // Update these to match the client's brand. They get injected as
-    // CSS custom properties so every component picks them up automatically.
     colors: {
-        primary: "#506030",
-        primaryDark: "#3e4c24",
-        primaryLight: "#6b7d44",
-        secondary: "#584030",
-        secondaryDark: "#3f2d22",
-        secondaryLight: "#7a5d4a",
-        bg: "#F7F5EE",
-        bgAlt: "#EFECE3",
-        ink: "#0E0E10",
-        muted: "#5A5A63",
-        border: "#D6D3C9",
-        star: "#D4A017",
+        primary: "#324225",
+        primaryDark: "#2D3920",
+        primaryLight: "#9FA69A",
+        secondary: "#CB7517",
+        secondaryDark: "#AA7126",
+        secondaryLight: "#D9DED4",
+        bg: "#FFFFFF",
+        bgAlt: "#F7F8F4",
+        ink: "#324225",
+        muted: "#9FA69A",
+        border: "#D9DED4",
+        star: "#CB7517",
     },
 
     // ── Images ───────────────────────────────────────────────────
     images: {
         logo: "/logo.png",
-        hero: "/images/hero.jpg",
-        about: "/images/about.jpg",
+        hero: "/images/8.jpg",
+        about: "/images/7.jpg",
+        trust: "/images/1.jpg",
     },
 
     // ── Hero Section ─────────────────────────────────────────────
     hero: {
-        badge: "Trusted Local Business · Your City, ST",
-        headline: "Your Main Headline Here",
+        badge: "Trusted Local Contractor · Highlands Ranch, CO",
+        headline: "Expert Handyman & Construction Services",
         subheadline:
-            "A compelling subheadline that describes what you do and why customers should choose you.",
-        ctaText: "Get Free Estimate",
-        responseTime: "Response within one business day",
+            "From small home repairs to full kitchen and bathroom remodels, JBK Handyman & Construction Services LLC delivers precision and quality workmanship.",
+        ctaText: "Request a Free Estimate",
+        responseTime: "Prompt, Professional Service",
         stats: [
-            { value: "XX+", label: "REPLACE_STAT_LABEL" },
-            { value: "XXX+", label: "REPLACE_STAT_LABEL" },
-            { value: "5★", label: "REPLACE_STAT_LABEL" },
-            { value: "100%", label: "REPLACE_STAT_LABEL" },
+            { value: "15+", label: "Years Experience" },
+            { value: "6", label: "Core Services" },
+            { value: "100%", label: "Satisfaction Focus" },
+            { value: "Local", label: "Douglas County" },
         ],
     },
 
     // ── Trust Row ────────────────────────────────────────────────
     trustItems: [
         {
-            title: "REPLACE_TRUST_POINT_1",
-            description:
-                "REPLACE: Why should customers trust you? E.g. locally owned, veteran owned, family business.",
+            title: "Over 15 Years of Experience",
+            description: "Deep expertise across diverse handyman, maintenance, and complex remodeling projects.",
         },
         {
-            title: "REPLACE_TRUST_POINT_2",
-            description:
-                "REPLACE: A key differentiator. E.g. years of experience, certifications, number of projects.",
+            title: "Craftsmanship & Detail",
+            description: "An unwavering commitment to quality in everything we build, repair, and install.",
         },
         {
-            title: "REPLACE_TRUST_POINT_3",
-            description:
-                "REPLACE: Another selling point. E.g. transparent pricing, free estimates, licensed & insured.",
+            title: "Customer-Centered Service",
+            description: "Clear communication, practical problem solving, and respectful project execution.",
         },
         {
-            title: "REPLACE_TRUST_POINT_4",
-            description:
-                "REPLACE: One more value prop. E.g. professional teams, satisfaction guaranteed, quality materials.",
+            title: "Local Highland Ranch Contractor",
+            description: "A reliable community partner you can confidently call for any home improvement need.",
         },
     ],
 
     // ── Services ─────────────────────────────────────────────────
     services: {
-        sectionLabel: "What We Do",
-        sectionTitle: "Our Services",
+        sectionLabel: "Our Expertise",
+        sectionTitle: "Comprehensive Construction & Handyman Services",
         items: [
             {
-                title: "Service One",
-                description: "Description of your first service offering.",
-                image: "/images/services/placeholder.jpg",
-                alt: "Service one image description",
+                title: "Handyman Services",
+                description: "General repairs, home maintenance, fixture work, and TV mounting to keep homes functional and well maintained.",
+                image: "/images/9.jpg",
+                alt: "Handyman mounting a TV and performing home maintenance",
+                href: "/handyman-services-highlands-ranch-co",
             },
             {
-                title: "Service Two",
-                description: "Description of your second service offering.",
-                image: "/images/services/placeholder.jpg",
-                alt: "Service two image description",
+                title: "Repair and Installation Services",
+                description: "Electrical repairs, plumbing repairs, light fixture installations, drywall repair, and related home improvement work.",
+                image: "/images/2.jpg",
+                alt: "Professional performing appliance and home installation services",
+                href: "/repair-installation-services-highlands-ranch-co",
             },
             {
-                title: "Service Three",
-                description: "Description of your third service offering.",
-                image: "/images/services/placeholder.jpg",
-                alt: "Service three image description",
+                title: "Construction and Remodeling Services",
+                description: "Carpentry, painting, basement finishing, renovation work, and more involved residential improvement projects.",
+                image: "/images/3.jpg",
+                alt: "Completed living space construction and remodeling project",
+                href: "/construction-remodeling-services-jbk-handyman-construction",
             },
             {
-                title: "Service Four",
-                description: "Description of your fourth service offering.",
-                image: "/images/services/placeholder.jpg",
-                alt: "Service four image description",
+                title: "Bathroom Remodeling",
+                description: "Fixture upgrades, tile work, layout improvements, and complete beautiful bathroom remodeling solutions.",
+                image: "/images/4.jpg",
+                alt: "Beautiful, modernized completed bathroom remodeling",
+                href: "/bathroom-remodel-in-highlands-ranch-co",
             },
             {
-                title: "Service Five",
-                description: "Description of your fifth service offering.",
-                image: "/images/services/placeholder.jpg",
-                alt: "Service five image description",
+                title: "Kitchen Remodeling",
+                description: "Cabinetry, countertops, lighting improvements, layout upgrades, and full custom kitchen renovation work.",
+                image: "/images/5.jpg",
+                alt: "Luxurious modernized kitchen with large island and modern lighting",
+                href: "/kitchen-remodel-in-highlands-ranch-co",
             },
             {
-                title: "Service Six",
-                description: "Description of your sixth service offering.",
-                image: "/images/services/placeholder.jpg",
-                alt: "Service six image description",
+                title: "Flooring Services",
+                description: "Expert installation and replacement of hardwood, laminate, tile, luxury vinyl, and other residential flooring materials.",
+                image: "/images/6.jpg",
+                alt: "New hardwood flooring and stairs installation",
+                href: "/flooring-installation-in-highlands-ranch-co",
             },
         ],
     },
@@ -145,63 +146,59 @@ export const siteConfig = {
     // ── Process Steps ────────────────────────────────────────────
     process: {
         sectionLabel: "How We Work",
-        sectionTitle: "Our Process",
+        sectionTitle: "A Homeowner Friendly Process",
         steps: [
             {
                 number: "01",
-                title: "REPLACE_STEP_1_TITLE",
-                description:
-                    "REPLACE: Describe the first step. E.g. initial consultation, free estimate, discovery call.",
+                title: "Consultation & Review",
+                description: "We discuss your project requirements, listen to your goals, and assess the scope of work and property condition.",
             },
             {
                 number: "02",
-                title: "REPLACE_STEP_2_TITLE",
-                description:
-                    "REPLACE: Describe the second step. E.g. planning, design, material selection, scheduling.",
+                title: "Detailed Estimate",
+                description: "You'll receive a clear, upfront estimate covering all necessary materials, labor, and expected timelines.",
             },
             {
                 number: "03",
-                title: "REPLACE_STEP_3_TITLE",
-                description:
-                    "REPLACE: Describe the third step. E.g. the actual work/build/service/installation phase.",
+                title: "Scheduling & Execution",
+                description: "We work efficiently and respectfully in your home, ensuring top-tier craftsmanship and a clean workspace.",
             },
             {
                 number: "04",
-                title: "REPLACE_STEP_4_TITLE",
-                description:
-                    "REPLACE: Describe the final step. E.g. walkthrough, quality check, follow-up, handoff.",
+                title: "Project Completion",
+                description: "A final walkthrough verifies quality, ensuring every detail meets your standards and exceeds your expectations.",
             },
         ],
         expectations: [
-            "REPLACE: Expectation 1 — e.g. clear communication",
-            "REPLACE: Expectation 2 — e.g. on-time scheduling",
-            "REPLACE: Expectation 3 — e.g. clean work areas",
-            "REPLACE: Expectation 4 — e.g. professional crews",
+            "Clear, honest communication",
+            "Punctual and dependable scheduling",
+            "Organized, clean workspaces",
+            "Professional, highly skilled craftsmanship",
         ],
     },
 
     // ── Reviews ──────────────────────────────────────────────────
     reviews: {
         sectionLabel: "Testimonials",
-        sectionTitle: "What Our Clients Say",
+        sectionTitle: "What Homeowners Are Saying",
         items: [
             {
-                initials: "JD",
-                name: "John D.",
+                initials: "MH",
+                name: "Mark H.",
                 stars: 5,
-                text: "Placeholder review text. Replace with real customer feedback.",
+                text: "Justin and his team completely transformed our master bathroom. Their attention to detail was incredible, and they finished exactly when they said they would. A highly professional local contractor.",
             },
             {
-                initials: "SM",
-                name: "Sarah M.",
+                initials: "SS",
+                name: "Sarah S.",
                 stars: 5,
-                text: "Placeholder review text. Replace with real customer feedback.",
+                text: "JBK Handyman is our go-to for everything from drywall fixes to tricky light fixtures. They are always reliable, fully transparent with pricing, and provide excellent craftsmanship.",
             },
             {
-                initials: "RK",
-                name: "Robert K.",
+                initials: "DB",
+                name: "David B.",
                 stars: 5,
-                text: "Placeholder review text. Replace with real customer feedback.",
+                text: "We hired them for a kitchen upgrade and flooring installation throughout the main level. The result is flawless. Truly a premium remodeling service right here in Highlands Ranch.",
             },
         ],
     },
@@ -209,47 +206,49 @@ export const siteConfig = {
     // ── About ────────────────────────────────────────────────────
     about: {
         sectionLabel: "About Us",
-        heading: "Meet REPLACE_BUSINESS_NAME",
+        heading: "Meet JBK Handyman & Construction Services LLC",
         paragraphs: [
-            "REPLACE: Write a paragraph about the business owner/company and their background here.",
-            "REPLACE: Write a second paragraph about the business values and what makes you different.",
+            "With over 15 years of experience, Justin B. Kirschner and the team at JBK Handyman & Construction Services LLC deliver exceptional craftsmanship to homeowners in Highlands Ranch and the greater Denver area.",
+            "From simple home maintenance tasks and fixture installations to comprehensive kitchen and bathroom remodels, we handle every project with precision. We pride ourselves on reliability, open communication, and practical problem solving that leaves every home better than we found it.",
         ],
-        ctaPrimary: "Get Your Free Estimate",
-        ctaSecondary: "Call REPLACE_OWNER_NAME",
+        ctaPrimary: "Request an Estimate",
+        ctaSecondary: "Call (720) 987-6053",
     },
 
     // ── Service Area ─────────────────────────────────────────────
     serviceArea: {
         sectionLabel: "Where We Work",
-        heading: "Proudly Serving Your City and Surrounding Communities",
-        mapTitle: "Serving Your City, State",
-        mapSubtitle: "and surrounding areas in Your County",
+        heading: "Proudly serving Highlands Ranch and nearby communities throughout the greater Denver area",
+        mapTitle: "Serving Highlands Ranch, CO",
+        mapSubtitle: "and surrounding areas including Castle Rock, Jefferson County, and Douglas County",
     },
 
     // ── Estimate Form ────────────────────────────────────────────
     form: {
-        embedUrl:
-            "https://api.leadconnectorhq.com/widget/form/YOUR_FORM_ID_HERE",
-        formId: "YOUR_FORM_ID_HERE",
-        formTitle: "Request a Free Estimate",
+        embedUrl: "https://api.leadconnectorhq.com/widget/form/JHshIb4QVpaGnye1OJpT",
+        formId: "JHshIb4QVpaGnye1OJpT",
+        formTitle: "Request a Free Consultation",
         promises: [
-            "Free, no-obligation estimate",
-            "Response within one business day",
-            "Detailed, itemized pricing",
-            "No pressure, no hidden fees",
+            "Professional, competitive estimate",
+            "Respectful, responsive local service",
+            "Premium quality execution",
+            "Clear project timelines",
         ],
     },
 
     // ── SEO ──────────────────────────────────────────────────────
     seo: {
-        title: "Your Business Name | Services in Your City, ST",
+        title: "JBK Handyman & Construction Services LLC | Handyman and Remodeling in Highlands Ranch, CO",
         description:
-            "Your SEO meta description. Include your main services and location.",
+            "JBK Handyman & Construction Services LLC provides handyman services, repairs, installations, remodeling, kitchen remodeling, bathroom remodeling, and flooring services in Highlands Ranch, CO and surrounding areas.",
         keywords: [
-            "your service your city",
-            "service provider near me",
+            "handyman Highlands Ranch CO",
+            "kitchen remodeling Highlands Ranch",
+            "bathroom remodeling Douglas County",
+            "home improvement Denver area",
+            "general contractor Littleton CO",
         ],
-        ogImage: "/images/hero.jpg",
+        ogImage: "/images/8.jpg",
     },
 
     // ── Schema.org (JSON-LD) ─────────────────────────────────────
@@ -257,9 +256,12 @@ export const siteConfig = {
         businessType: "LocalBusiness",
         priceRange: "$$",
         knowsAbout: [
-            "Service One",
-            "Service Two",
-            "Service Three",
+            "Handyman Services",
+            "Repair and Installation Services",
+            "Construction and Remodeling Services",
+            "Bathroom Remodeling",
+            "Kitchen Remodeling",
+            "Flooring Services"
         ],
     },
 
