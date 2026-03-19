@@ -52,7 +52,7 @@ export const siteConfig = {
     // ── Images ───────────────────────────────────────────────────
     images: {
         logo: "/logo-jbk-v2.png",
-        hero: "/images/8.jpg",
+        hero: "/images/hero-hd.jpg",
         about: "/images/7.jpg",
         trust: "/images/1.jpg",
     },

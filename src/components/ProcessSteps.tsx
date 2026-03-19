@@ -1,6 +1,6 @@
 import { siteConfig } from "../../site.config";
 
-const { process } = siteConfig;
+const { process, business } = siteConfig;
 
 export default function ProcessSteps() {
     return (
@@ -54,6 +54,29 @@ export default function ProcessSteps() {
                         ))}
                     </ul>
                 </div>
+
+                {/* Section CTA */}
+                <div className="mt-10 flex flex-col sm:flex-row items-center justify-center gap-3">
+                    <a
+                        href="#contact"
+                        className="inline-flex items-center gap-2 bg-[var(--color-secondary)] text-white font-semibold px-7 py-3.5 shadow-md hover:bg-[var(--color-secondary-dark)] transition-all duration-200 hover:-translate-y-0.5 hover:shadow-lg text-sm"
+                    >
+                        Get Started — Request Your Free Estimate
+                        <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" strokeWidth={2.5} stroke="currentColor">
+                            <path strokeLinecap="round" strokeLinejoin="round" d="m8.25 4.5 7.5 7.5-7.5 7.5" />
+                        </svg>
+                    </a>
+                    <a
+                        href={`tel:${business.phoneRaw}`}
+                        className="inline-flex items-center gap-2 border-2 border-[var(--color-secondary)] text-[var(--color-secondary)] font-semibold px-7 py-3.5 hover:bg-[var(--color-secondary)] hover:text-white transition-all duration-200 hover:-translate-y-0.5 text-sm"
+                    >
+                        <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" strokeWidth={2} stroke="currentColor">
+                            <path strokeLinecap="round" strokeLinejoin="round" d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 0 0 2.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-.282.376-.769.542-1.21.38a12.035 12.035 0 0 1-7.143-7.143c-.162-.441.004-.928.38-1.21l1.293-.97c.363-.271.527-.734.417-1.173L6.963 3.102a1.125 1.125 0 0 0-1.091-.852H4.5A2.25 2.25 0 0 0 2.25 4.5v2.25Z" />
+                        </svg>
+                        {business.phone}
+                    </a>
+                </div>
+                <p className="mt-3 text-center text-xs text-[var(--color-muted)]">Simple, fast, and commitment&#8209;free</p>
             </div>
         </section>
     );
