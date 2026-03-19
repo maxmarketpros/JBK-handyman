@@ -42,7 +42,7 @@ export default function Header() {
                 : "bg-white"
                 }`}
         >
-            <div className="container-wide flex items-center justify-between h-[140px]">
+            <div className="container-wide flex items-center justify-between h-20 lg:h-[140px]">
                 {/* Logo */}
                 <Link href="/" className="flex-shrink-0" aria-label={`${business.name} Home`}>
                     <Image
@@ -50,7 +50,7 @@ export default function Header() {
                         alt={business.name}
                         width={527}
                         height={140}
-                        className="h-[120px] w-auto"
+                        className="h-12 lg:h-[120px] w-auto"
                         priority
                     />
                 </Link>

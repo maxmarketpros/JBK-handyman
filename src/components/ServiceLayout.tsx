@@ -38,8 +38,8 @@ export default function ServiceLayout({
                         />
                         <div className="absolute inset-0 bg-black/60" />
                     </div>
-                    <div className="container relative z-10 text-center text-white">
-                        <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold font-[family-name:var(--font-heading)] !text-white drop-shadow-md mb-6 leading-tight">
+                    <div className="container mx-auto px-4 relative z-10 text-center text-white">
+                        <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold font-[family-name:var(--font-heading)] !text-white drop-shadow-md mb-6 leading-tight break-words">
                             {title}
                         </h1>
                         <div className="w-24 h-1 bg-[var(--color-primary-light)] mx-auto mb-8 rounded-full" />
