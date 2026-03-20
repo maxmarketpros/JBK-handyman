@@ -6,7 +6,9 @@ export default function sitemap(): MetadataRoute.Sitemap {
     
     const routes = [
         "",
+        "/general-contractor-in-highlands-ranch-co",
         "/general-contractor-in-castle-rock-co",
+        "/general-contractor-in-parker-co",
         "/general-contractor-in-jefferson-county-co",
         "/general-contractor-in-douglas-county-co",
         "/general-contractor-in-denver-co",
@@ -16,6 +18,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
         "/handyman-services-highlands-ranch-co",
         "/repair-installation-services-highlands-ranch-co",
         "/construction-remodeling-services-jbk-handyman-construction",
+        "/home-renovations-in-highlands-ranch-co",
         "/kitchen-remodel-in-highlands-ranch-co",
         "/flooring-installation-in-highlands-ranch-co",
         "/contact-us-jbk-handyman-construction-services",

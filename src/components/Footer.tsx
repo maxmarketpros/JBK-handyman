@@ -8,6 +8,7 @@ const serviceLinks = [
     { label: "Handyman Services", href: "/handyman-services-highlands-ranch-co" },
     { label: "Repair & Installation", href: "/repair-installation-services-highlands-ranch-co" },
     { label: "Construction & Remodeling", href: "/construction-remodeling-services-jbk-handyman-construction" },
+    { label: "Home Renovations", href: "/home-renovations-in-highlands-ranch-co" },
     { label: "Bathroom Remodeling", href: "/bathroom-remodel-in-highlands-ranch-co" },
     { label: "Kitchen Remodeling", href: "/kitchen-remodel-in-highlands-ranch-co" },
     { label: "Flooring Installation", href: "/flooring-installation-in-highlands-ranch-co" },

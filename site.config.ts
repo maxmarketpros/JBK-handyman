@@ -122,6 +122,13 @@ export const siteConfig = {
                 href: "/construction-remodeling-services-jbk-handyman-construction",
             },
             {
+                title: "Home Renovations",
+                description: "Full-scale interior updates, room modernizations, and custom home transformations tailored to your style.",
+                image: "/images/8.jpg",
+                alt: "Premium home renovation and interior update in Highlands Ranch",
+                href: "/home-renovations-in-highlands-ranch-co",
+            },
+            {
                 title: "Bathroom Remodeling",
                 description: "Fixture upgrades, tile work, layout improvements, and complete beautiful bathroom remodeling solutions.",
                 image: "/images/4.jpg",
@@ -261,6 +268,7 @@ export const siteConfig = {
             "Handyman Services",
             "Repair and Installation Services",
             "Construction and Remodeling Services",
+            "Home Renovations",
             "Bathroom Remodeling",
             "Kitchen Remodeling",
             "Flooring Services"
