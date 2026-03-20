@@ -24,7 +24,9 @@ export const siteConfig = {
         county: "Douglas County",
         geo: { lat: 39.5544, lng: -104.9696 },
         areasServed: [
+            "Highlands Ranch",
             "Castle Rock",
+            "Parker",
             "Jefferson County",
             "Douglas County",
             "Denver",

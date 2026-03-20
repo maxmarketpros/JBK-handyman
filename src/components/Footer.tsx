@@ -11,10 +11,13 @@ const serviceLinks = [
     { label: "Bathroom Remodeling", href: "/bathroom-remodel-in-highlands-ranch-co" },
     { label: "Kitchen Remodeling", href: "/kitchen-remodel-in-highlands-ranch-co" },
     { label: "Flooring Installation", href: "/flooring-installation-in-highlands-ranch-co" },
+    { label: "Remodeling FAQ", href: "/remodeling-faq" },
 ];
 
 const locationLinks = [
+    { label: "Highlands Ranch", href: "/general-contractor-in-highlands-ranch-co" },
     { label: "Castle Rock", href: "/general-contractor-in-castle-rock-co" },
+    { label: "Parker", href: "/general-contractor-in-parker-co" },
     { label: "Jefferson County", href: "/general-contractor-in-jefferson-county-co" },
     { label: "Douglas County", href: "/general-contractor-in-douglas-county-co" },
     { label: "Denver", href: "/general-contractor-in-denver-co" },

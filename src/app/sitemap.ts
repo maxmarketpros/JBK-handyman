@@ -19,6 +19,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
         "/kitchen-remodel-in-highlands-ranch-co",
         "/flooring-installation-in-highlands-ranch-co",
         "/contact-us-jbk-handyman-construction-services",
+        "/remodeling-faq",
     ];
 
     return routes.map((route) => ({

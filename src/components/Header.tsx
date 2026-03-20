@@ -17,7 +17,9 @@ const serviceLinks = [
 ];
 
 const locationLinks = [
+    { label: "Highlands Ranch", href: "/general-contractor-in-highlands-ranch-co" },
     { label: "Castle Rock", href: "/general-contractor-in-castle-rock-co" },
+    { label: "Parker", href: "/general-contractor-in-parker-co" },
     { label: "Jefferson County", href: "/general-contractor-in-jefferson-county-co" },
     { label: "Douglas County", href: "/general-contractor-in-douglas-county-co" },
     { label: "Denver", href: "/general-contractor-in-denver-co" },
@@ -103,6 +105,10 @@ export default function Header() {
                         </div>
                     </div>
 
+                    <Link href="/remodeling-faq" className="text-sm font-medium text-[var(--color-ink)] hover:text-[var(--color-primary)] transition-colors">
+                        FAQ
+                    </Link>
+
                     <Link href="/contact-us-jbk-handyman-construction-services" className="text-sm font-medium text-[var(--color-ink)] hover:text-[var(--color-primary)] transition-colors">
                         Contact
                     </Link>
@@ -176,6 +182,10 @@ export default function Header() {
                             {link.label}
                         </Link>
                     ))}
+
+                    <Link href="/remodeling-faq" onClick={() => setMobileOpen(false)} className="px-3 py-2.5 text-base font-medium text-[var(--color-ink)]">
+                        Remodeling FAQ
+                    </Link>
 
                     <hr className="border-[var(--color-border)] my-4" />
                     <a
